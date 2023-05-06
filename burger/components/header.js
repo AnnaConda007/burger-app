@@ -6,19 +6,20 @@ const Header = () => {
 			<div>
 				<FaHamburger />
 			</div>
-			<Link href='/'>
-				<p>Домой</p>
-			</Link>
-			<Link href='/about'>
-				<p>О нас</p>
-			</Link>
-			<Link href='/review'>
-				<p>Отзывы</p>
-			</Link>
-			<Link href='/burgers'>
-				<p>Бургеры</p>
-			</Link>
-			<nav></nav>
+			<nav>
+				<Link href='/'>
+					<p>Домой</p>
+				</Link>
+				<Link href='/about'>
+					<p>О нас</p>
+				</Link>
+				<Link href='/review'>
+					<p>Отзывы</p>
+				</Link>
+				<Link href='/burgers'>
+					<p>Бургеры</p>
+				</Link>
+			</nav>
 		</header>
 	);
 };
