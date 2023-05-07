@@ -1,4 +1,6 @@
-import styles from '../styles/Home.module.css'; /* тут импортируется объект js -
+import styles from '../styles/Home.module.css';
+import classNames from 'classnames';
+/* тут импортируется объект js -
 styles */
 import Link from 'next/link';
 export default function Home() {
@@ -8,7 +10,10 @@ export default function Home() {
 			????????????????????
 			такая запись, так как класс в данном случае является свойством объекта styles */}
 			<h1
-				className={`${styles.title} font-effect-fire-animation`} /*
+				className={classNames(
+					styles.title,
+					`font-effect-fire-animation`
+				)} /*
 				????????????????????????????????????????????????????????????????
 			тут происходит конкатенация строки из объекта {styles.title} и обычного класса,
 			 так как классу не задано свойство и он не является объектом, он записывется как обычный класс.
