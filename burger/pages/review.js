@@ -12,7 +12,7 @@ const review = ({ data }) => {
 				<h1>Отзывы</h1>
 				<div className='reviews'>
 					{!!data.length &&
-						data.map((comment) => {
+						data.slice(0, 20).map((comment) => {
 							return (
 								<div key={comment.id} className='review'>
 									{comment.id}
