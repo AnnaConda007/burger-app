@@ -16,9 +16,8 @@ const AllBurgers = ({ burgers }) => {
 		<div>
 			<h1>Все бургеры</h1>
 			{burgers.map((burger) => {
-				console.log(burger);
 				return (
-					<Link href={`/burger/${burger.id}`} key={burger.id}>
+					<Link href={`/burgers/${burger.id}`} key={burger.id}>
 						<div className={styles.burgerCard}>
 							<div className={styles.imageContainer}>
 								<Image src={`${burger.image}`} width={100} height={100} alt='burger'></Image>
